@@ -9,6 +9,9 @@ namespace PistonSimulation
     {
         public Action<BasePistonPiece> onPieceGrabbed;
         public Action<BasePistonPiece> onPieceReleased;
+        
+        public Action<BasePistonPiece> onPieceMounted;
+        public Action<BasePistonPiece> onPieceUnmounted;
 
         public bool isAnimating;
         

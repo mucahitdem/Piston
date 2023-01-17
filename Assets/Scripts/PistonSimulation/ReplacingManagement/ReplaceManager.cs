@@ -30,6 +30,12 @@ namespace PistonSimulation.ReplacingManagement
 
         private void OnItemSelected(BasePistonPiece pistonPiece)
         {
+            if (pistonPiece.placeToReplace)
+            {
+                pistonPiece.placeToReplace.OnProperItemSelected();
+                return;
+            }
+            
             foreach (var place in placeToReplaces)
             {
                 if (!place.IsFull && place.layer == pistonPiece.pieceSo.pistonPieceData.layer)
@@ -43,7 +49,10 @@ namespace PistonSimulation.ReplacingManagement
         
         private void OnItemReleased(BasePistonPiece pistonPiece)
         {
-            _tempPlace.OnProperItemReleased();
+            if(_tempPlace)
+                _tempPlace.OnProperItemReleased();
+            else if(pistonPiece.placeToReplace)
+                pistonPiece.placeToReplace.OnProperItemReleased();
             _tempPlace = null;
         }
     }

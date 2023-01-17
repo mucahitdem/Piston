@@ -151,7 +151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_Name
-      value: Piece_wrist_pin
+      value: Piece_wrist_pin Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: pieceSo
@@ -167,6 +167,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: conditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902509511325552080, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: m_Drag
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

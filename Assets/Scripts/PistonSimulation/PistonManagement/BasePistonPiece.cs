@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using PistonSimulation.Animations;
@@ -11,9 +11,14 @@ namespace PistonSimulation.PistonManagement
     public class BasePistonPiece : MonoBehaviour
     {
         public PistonPieceSo pieceSo;
+        public PlaceToReplace placeToReplace;
         
         [SerializeField]
-        private List<Condition> conditions = new List<Condition>();
+        private List<Condition> mountConditions = new List<Condition>();
+        
+        [SerializeField]
+        private List<Condition> dismountConditions = new List<Condition>();
+
         
         [SerializeField]
         private Vector3 holdRotation;
@@ -50,7 +55,6 @@ namespace PistonSimulation.PistonManagement
         }
 
         private Collider _col;
-
         private Collider Col
         {
             get
@@ -62,6 +66,7 @@ namespace PistonSimulation.PistonManagement
             }
         }
 
+        
         private Camera _camera;
         private Camera Camera
         {
@@ -77,24 +82,49 @@ namespace PistonSimulation.PistonManagement
 
         private float _distToScreen;
         private string _uniqueId;
-        private PlaceToReplace _placeToReplace;
+        
         
         private void Awake()
         {
             _uniqueId = gameObject.GetInstanceID().ToString();
         }
 
+        private void OnEnable()
+        {
+            GameManager.Instance.onPieceMounted += OnPieceOnMounted;
+            GameManager.Instance.onPieceUnmounted += OnPieceOnUnmounted;
+        }
+
+        private void OnPieceOnMounted(BasePistonPiece unmountedPiece)
+        {
+            StartCoroutine(UpdateCollider());
+        }
+        private void OnPieceOnUnmounted(BasePistonPiece mountedPiece)
+        {
+            StartCoroutine(UpdateCollider());
+        }
+
+        private IEnumerator UpdateCollider()
+        {
+            yield return new WaitUntil(() => GameManager.Instance.isAnimating == false);           
+            ColliderActivateController(DismountConditionsAreDone());
+        }
+        
         public void OnPieceReleased(PlaceToReplace target)
         {
-            if (AllConditionsAreDone())
+            placeToReplace = target;
+            
+            if (MountConditionsAreDone())
             {
                 GameManager.Instance.isAnimating = true;
-
-                _placeToReplace = target;
                 
+                ColTriggerControl(true);
+                ColliderActivateController(false);
                 SetIsMounted(true);
                 RigidBodyControl(RigidbodyConstraints.FreezeAll);
-                ColTriggerControl(true);
+               
+                
+                GameManager.Instance.onPieceMounted?.Invoke(this);
 
                 target.IsFull = true;
                 var transform1 = target.transform;
@@ -112,24 +142,29 @@ namespace PistonSimulation.PistonManagement
                 RigidBodyControl(RigidbodyConstraints.None);
             }
         }
-
         private void OnMouseDown()
         {
-            if (IsMounted()) // todo fix
+            if (IsMounted())
             {
-                SetIsMounted(false);
-                ColTriggerControl(false);
-                _placeToReplace.IsFull = false;
-                Debug.LogError(_placeToReplace.transform.name);
-                TransformObj.parent = null;
+                if (DismountConditionsAreDone())
+                {
+                    SetIsMounted(false);
+                    ColTriggerControl(false);
+                    placeToReplace.IsFull = false;
+                    TransformObj.parent = null;
+                    
+                    GameManager.Instance.onPieceUnmounted?.Invoke(this);
+                }
+                else
+                {
+                    return;
+                }
             }
-
             
             GameManager.Instance.onPieceGrabbed?.Invoke(this);
             RbOfObj.constraints = RigidbodyConstraints.FreezeRotation;
             TransformObj.DORotate(holdRotation, .5f);
         }
-
         private void OnMouseDrag()
         {
             RbOfObj.velocity = Vector3.zero;
@@ -140,15 +175,14 @@ namespace PistonSimulation.PistonManagement
                                                     Mathf.Clamp(pos.y, Defs.YVal.MinVal, Defs.YVal.MaxVal),
                                                             Defs.FIXED_Z_POS);
         }
-
         private void OnMouseUp()
         {
             RigidBodyControl(RigidbodyConstraints.None);
         }
-
-        private bool AllConditionsAreDone()
+        
+        private bool MountConditionsAreDone()
         {
-            foreach (var condition in  conditions)
+            foreach (var condition in  mountConditions)
             {
                 if (!condition.IsConditionOkay())
                 {
@@ -158,22 +192,34 @@ namespace PistonSimulation.PistonManagement
             
             return true;
         }
-
+        private bool DismountConditionsAreDone()
+        {
+            foreach (var condition in dismountConditions)
+            {
+                if (!condition.IsConditionOkay())
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
         private void SetIsMounted(bool isMounted)
         {
             PlayerPrefs.SetInt( _uniqueId, isMounted ? 1 : 0);
         }
-        
         private bool IsMounted()
         {
             return PlayerPrefs.GetInt(_uniqueId, 0) == 1;
         }
-
         private void ColTriggerControl(bool isTrigger)
         {
             Col.isTrigger = isTrigger;
         }
-
+        private void ColliderActivateController(bool isEnabled)
+        {
+            Col.enabled = isEnabled;
+        }
         private void RigidBodyControl(RigidbodyConstraints constraints)
         {
             RbOfObj.constraints = constraints;

@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/BasePistonPiece.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ControlPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Defs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InputManagement/Input.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/BaseAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBolt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBearingCapSide.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,15 +75,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PlaceToReplace.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/ReplaceManagers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Core/SingletonMono.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/ReplaceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Defs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ControlPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/PistonPieceData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ConditionManagement/Condition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBolt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/ReplaceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/PlaceToReplace.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/BasePistonPiece.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBolt.cs" />
       </list>
     </option>
   </component>

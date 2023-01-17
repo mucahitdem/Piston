@@ -246,9 +246,25 @@ PrefabInstance:
       value: Piece_rod_bolt_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 7829935438102296747}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 7829935438102296747}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8431819327867221593, guid: c31a2e64548d88d449a921284d670559, type: 3}
       propertyPath: cam
       value: 
@@ -371,7 +387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &419391446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -381,7 +397,7 @@ BoxCollider:
   m_GameObject: {fileID: 419391445}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -442,14 +458,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419391445}
-  m_LocalRotation: {x: 0.5323156, y: 0.3050694, z: -0.21361183, w: 0.76022553}
-  m_LocalPosition: {x: 6.17, y: -2.92, z: 3.24}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: -2.48, y: 3.29, z: -2.59}
   m_LocalScale: {x: 15.309998, y: 0.49999994, z: 15.1799965}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1485456172}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 70, y: 43.73, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &538802444
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +570,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5062451320271149862, guid: 6c28c507063456a4fa645d90cefd1519, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062451320271149862, guid: 6c28c507063456a4fa645d90cefd1519, type: 3}
+      propertyPath: dismountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 8555438502467521379}
     - target: {fileID: 6914042432303531030, guid: 6c28c507063456a4fa645d90cefd1519, type: 3}
       propertyPath: m_Name
       value: Piece_Piston Variant
@@ -1230,9 +1254,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 3209377337031228297}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 3209377337031228297}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8997275904864160314, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
       propertyPath: m_Name
       value: Piece_pin_clip_1 (1)
@@ -1913,9 +1953,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697679705600665254, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697679705600665254, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697679705600665254, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 8818746176670778748}
+    - target: {fileID: 8697679705600665254, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 8818746176670778748}
+    - target: {fileID: 8697679705600665254, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697679705600665254, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
+      propertyPath: dismountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 7829935438102296747}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c574703ca64bf14c891e2d07f67d070, type: 3}
 --- !u!1 &2682066761601992614
@@ -2073,9 +2133,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 3209377337031228297}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 3209377337031228297}
+    - target: {fileID: 7308870051909211402, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8997275904864160314, guid: 11fc26d1234e12f4990440a71e309400, type: 3}
       propertyPath: m_Name
       value: Piece_pin_clip_1
@@ -2182,9 +2258,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 8218334601164126899}
+    - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 8218334601164126899}
+    - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
+      propertyPath: dismountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 8818746176670778748}
+    - target: {fileID: 1977093327506526964, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
+      propertyPath: dismountConditions.Array.data[1].place
+      value: 
+      objectReference: {fileID: 3209377337031228297}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aa07e4a3c9ff144cb49aa5251a10aa7, type: 3}
 --- !u!33 &4775156404991282715
@@ -2313,9 +2413,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1286185346983467528, guid: a88a1dd7034f6da489890dc346272066, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286185346983467528, guid: a88a1dd7034f6da489890dc346272066, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286185346983467528, guid: a88a1dd7034f6da489890dc346272066, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 8555438502467521379}
+    - target: {fileID: 1286185346983467528, guid: a88a1dd7034f6da489890dc346272066, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 8555438502467521379}
+    - target: {fileID: 1286185346983467528, guid: a88a1dd7034f6da489890dc346272066, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286185346983467528, guid: a88a1dd7034f6da489890dc346272066, type: 3}
+      propertyPath: dismountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 5311984959153932177}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a88a1dd7034f6da489890dc346272066, type: 3}
 --- !u!4 &5311984959153932175
@@ -2419,9 +2539,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 5311984959153932177}
+    - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 5311984959153932177}
+    - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
+      propertyPath: dismountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 5796282231478131824}
+    - target: {fileID: 1196629043126325932, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
+      propertyPath: dismountConditions.Array.data[1].place
+      value: 
+      objectReference: {fileID: 796507672}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a761678e8f6ff4e48905132f47ebdbe8, type: 3}
 --- !u!33 &5796282231478131822
@@ -2594,9 +2738,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 8555438502467521379}
+    - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 8555438502467521379}
+    - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
+      propertyPath: dismountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 6102611930110460319}
+    - target: {fileID: 409808633685923330, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
+      propertyPath: dismountConditions.Array.data[1].place
+      value: 
+      objectReference: {fileID: 6301462146563636983}
     - target: {fileID: 2025778248149551410, guid: 8c6106e9e51e08945a66435fe9d15c7d, type: 3}
       propertyPath: m_Name
       value: Piece_wrist_pin
@@ -2718,9 +2886,25 @@ PrefabInstance:
       value: Piece_rod_bolt_1
       objectReference: {fileID: 0}
     - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: mountConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: dismountConditions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
       propertyPath: conditions.Array.data[0].place
       value: 
       objectReference: {fileID: 7829935438102296747}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: mountConditions.Array.data[0].place
+      value: 
+      objectReference: {fileID: 7829935438102296747}
+    - target: {fileID: 4177870120193057809, guid: c31a2e64548d88d449a921284d670559, type: 3}
+      propertyPath: mountConditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8431819327867221593, guid: c31a2e64548d88d449a921284d670559, type: 3}
       propertyPath: cam
       value: 
