@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Sefir i Mevt\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Sefir i Mevt\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Piston.621738447.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Sefir i Mevt\Documents\GitHub\piston\piston" t="IncludeRecursive">
+    <e p="C:\Users\Sefir i Mevt\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Piston.-1123598220.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Sefir i Mevt\Documents\GitHub\piston" t="IncludeRecursive">
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -43,7 +43,14 @@
           <e p="PistonSimulation" t="Include">
             <e p="Animations" t="Include">
               <e p="BaseAnimation.cs" t="Include" />
+              <e p="PinClip.cs" t="Include" />
               <e p="PistonAnim.cs" t="Include" />
+              <e p="RodAnim.cs" t="Include" />
+              <e p="RodBearingCapSide.cs" t="Include" />
+              <e p="RodBearingRodSide.cs" t="Include" />
+              <e p="RodBolt.cs" t="Include" />
+              <e p="RodCap.cs" t="Include" />
+              <e p="WristPin.cs" t="Include" />
             </e>
             <e p="ConditionManagement" t="Include">
               <e p="Condition.cs" t="Include" />
@@ -55,6 +62,10 @@
               <e p="BasePistonPiece.cs" t="Include" />
               <e p="PistonPieceData.cs" t="Include" />
               <e p="PistonPieceSo.cs" t="Include" />
+            </e>
+            <e p="ReplacingManagement" t="Include">
+              <e p="PlaceToReplace.cs" t="Include" />
+              <e p="ReplaceManager.cs" t="Include" />
             </e>
           </e>
         </e>

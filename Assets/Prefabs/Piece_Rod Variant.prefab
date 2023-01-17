@@ -115,15 +115,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.903
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.48
+      value: 3.461
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.35
+      value: 5.142
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalRotation.w
@@ -162,8 +162,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3e306522431fc6c42bd7deb90cd04ca6, type: 2}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: baseAnimation
+      value: 
+      objectReference: {fileID: 716961955}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: holdRotation.x
-      value: -90
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: holdRotation.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.data[0].isFull
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4bf77296008944e9bf483453331226, type: 3}
@@ -172,3 +188,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4815328810752062308, guid: 7d4bf77296008944e9bf483453331226, type: 3}
   m_PrefabInstance: {fileID: 4616642277376439701}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &198976122288098756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+  m_PrefabInstance: {fileID: 4616642277376439701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &716961955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198976122288098756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0b23ae0add69b43b70365a8c5e223f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

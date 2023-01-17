@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using PistonSimulation.ConditionManagement;
 using UnityEngine;
 
 namespace PistonSimulation.PistonManagement
@@ -9,7 +7,5 @@ namespace PistonSimulation.PistonManagement
     public class PistonPieceData
     {
         public LayerMask layer;
-        public List<Condition> conditions = new List<Condition>();
-        public bool isMounted;
     }
 }

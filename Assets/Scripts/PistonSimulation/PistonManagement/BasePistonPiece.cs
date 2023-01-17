@@ -1,7 +1,9 @@
 ﻿using System;
-using Core;
+using System.Collections.Generic;
 using DG.Tweening;
 using PistonSimulation.Animations;
+using PistonSimulation.ConditionManagement;
+using PistonSimulation.ReplacingManagement;
 using UnityEngine;
 
 namespace PistonSimulation.PistonManagement
@@ -9,6 +11,9 @@ namespace PistonSimulation.PistonManagement
     public class BasePistonPiece : MonoBehaviour
     {
         public PistonPieceSo pieceSo;
+        
+        [SerializeField]
+        private List<Condition> conditions = new List<Condition>();
         
         [SerializeField]
         private Vector3 holdRotation;
@@ -71,45 +76,58 @@ namespace PistonSimulation.PistonManagement
 
 
         private float _distToScreen;
+        private string _uniqueId;
+        private PlaceToReplace _placeToReplace;
         
-        public void OnPieceReleased(Transform target)
+        private void Awake()
+        {
+            _uniqueId = gameObject.GetInstanceID().ToString();
+        }
+
+        public void OnPieceReleased(PlaceToReplace target)
         {
             if (AllConditionsAreDone())
             {
-                RbOfObj.constraints = RigidbodyConstraints.FreezeAll;
-                pieceSo.pistonPieceData.isMounted = true;
-                Col.enabled = false;
-                
-                baseAnimation.Animate(target, () => target.gameObject.SetActive(false));
+                GameManager.Instance.isAnimating = true;
 
-                // transform.DOMove(target.position, .5f);
-                // transform.DORotate(target.eulerAngles, .5f)
-                //     .OnComplete(() =>
-                //     {
-                //         target.gameObject.SetActive(false);
-                //     });
+                _placeToReplace = target;
+                
+                SetIsMounted(true);
+                RigidBodyControl(RigidbodyConstraints.FreezeAll);
+                ColTriggerControl(true);
+
+                target.IsFull = true;
+                var transform1 = target.transform;
+                TransformObj.parent = transform1.parent;
+                
+                baseAnimation.Animate(transform1,
+                    () =>
+                    {
+                        GameManager.Instance.isAnimating = false;
+                    });
             }
             else
             {
-                RbOfObj.constraints = RigidbodyConstraints.None;
+                GameManager.Instance.onPieceReleased(this);
+                RigidBodyControl(RigidbodyConstraints.None);
             }
         }
 
         private void OnMouseDown()
         {
-            if (pieceSo.pistonPieceData.isMounted)
+            if (IsMounted()) // todo fix
             {
-                pieceSo.pistonPieceData.isMounted = false;
-                Col.enabled = false;
-                
-                RbOfObj.constraints = RigidbodyConstraints.FreezeRotation;
-                TransformObj.DORotate(holdRotation, .5f);
+                SetIsMounted(false);
+                ColTriggerControl(false);
+                _placeToReplace.IsFull = false;
+                Debug.LogError(_placeToReplace.transform.name);
+                TransformObj.parent = null;
             }
-            else
-            {
-                RbOfObj.constraints = RigidbodyConstraints.FreezeRotation;
-                TransformObj.DORotate(holdRotation, .5f);
-            }
+
+            
+            GameManager.Instance.onPieceGrabbed?.Invoke(this);
+            RbOfObj.constraints = RigidbodyConstraints.FreezeRotation;
+            TransformObj.DORotate(holdRotation, .5f);
         }
 
         private void OnMouseDrag()
@@ -123,9 +141,14 @@ namespace PistonSimulation.PistonManagement
                                                             Defs.FIXED_Z_POS);
         }
 
+        private void OnMouseUp()
+        {
+            RigidBodyControl(RigidbodyConstraints.None);
+        }
+
         private bool AllConditionsAreDone()
         {
-            foreach (var condition in  pieceSo.pistonPieceData.conditions)
+            foreach (var condition in  conditions)
             {
                 if (!condition.IsConditionOkay())
                 {
@@ -134,6 +157,26 @@ namespace PistonSimulation.PistonManagement
             }
             
             return true;
+        }
+
+        private void SetIsMounted(bool isMounted)
+        {
+            PlayerPrefs.SetInt( _uniqueId, isMounted ? 1 : 0);
+        }
+        
+        private bool IsMounted()
+        {
+            return PlayerPrefs.GetInt(_uniqueId, 0) == 1;
+        }
+
+        private void ColTriggerControl(bool isTrigger)
+        {
+            Col.isTrigger = isTrigger;
+        }
+
+        private void RigidBodyControl(RigidbodyConstraints constraints)
+        {
+            RbOfObj.constraints = constraints;
         }
     }
 }

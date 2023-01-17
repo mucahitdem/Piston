@@ -1,17 +1,18 @@
 ﻿using System;
 using PistonSimulation.PistonManagement;
+using PistonSimulation.ReplacingManagement;
 
 namespace PistonSimulation.ConditionManagement
 {
     [Serializable]
     public class Condition
     {
-        public PistonPieceSo piece;
-        public bool isMounted;
+        public PlaceToReplace place;
+        public bool isFull;
 
         public bool IsConditionOkay()
         {
-            return piece.pistonPieceData.isMounted == isMounted;
+            return place.IsFull == isFull;
         }
     }
 }

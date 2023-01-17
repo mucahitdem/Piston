@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace PistonSimulation.Animations
 {
-    public class PistonAnim : BaseAnimation
+    public class RodAnim : BaseAnimation
     {
-        public override void Animate(Transform target , Action onComplete)
+        public override void Animate(Transform target, Action onComplete)
         {
             TransformObj.DORotate(target.eulerAngles, .5f);
-            TransformObj.DOMove(target.position + target.right * 1f, .5f)
+            TransformObj.DOMove(target.position + target.right * .5f, .5f)
                 .SetEase(Ease.OutSine)
                 .OnComplete(() =>
                 {

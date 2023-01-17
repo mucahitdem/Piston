@@ -119,15 +119,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.29
+      value: -0.341
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.642
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.662
+      value: 4.583
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalRotation.w
@@ -159,15 +159,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_Name
-      value: Piece_rod_bearing_rod_side Variant
+      value: Piece_rod_bearing_rod_side
       objectReference: {fileID: 0}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: pieceSo
       value: 
       objectReference: {fileID: 11400000, guid: 67befec39abf99443bc2c833ccf8b4d1, type: 2}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: baseAnimation
+      value: 
+      objectReference: {fileID: 5501709192741977346}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: holdRotation.x
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.data[0].isFull
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4bf77296008944e9bf483453331226, type: 3}
@@ -176,3 +188,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4815328810752062308, guid: 7d4bf77296008944e9bf483453331226, type: 3}
   m_PrefabInstance: {fileID: 5384302508888030569}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &606752919015195960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+  m_PrefabInstance: {fileID: 5384302508888030569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5501709192741977346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606752919015195960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9be50590a36e642a2af5d25aa5be8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

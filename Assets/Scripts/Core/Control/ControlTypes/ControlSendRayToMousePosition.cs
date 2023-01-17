@@ -49,13 +49,12 @@ namespace Core.Control.ControlTypes
         {
             _layer.value = newLayer;
         }
+        
         protected virtual void OnHitStart()
         {
-            Debug.LogError(Hit.transform.name);
         }
         protected virtual void OnHitAndHold()
         {
-            Debug.LogError(Hit.transform.name);
         }
     }
 }

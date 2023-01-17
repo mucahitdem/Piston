@@ -111,15 +111,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.271
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5.434
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalRotation.w
@@ -151,12 +151,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_Name
-      value: Piece_rod_cap Variant
+      value: Piece_rod_cap
       objectReference: {fileID: 0}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: pieceSo
       value: 
       objectReference: {fileID: 11400000, guid: 9f69c902e1beb1f4aadad17550709485, type: 2}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: baseAnimation
+      value: 
+      objectReference: {fileID: 5751545076248365861}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: holdRotation.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4bf77296008944e9bf483453331226, type: 3}
 --- !u!4 &660247475971524265 stripped
@@ -164,3 +180,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4815328810752062308, guid: 7d4bf77296008944e9bf483453331226, type: 3}
   m_PrefabInstance: {fileID: 5474925373390403021}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &660247475975867804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+  m_PrefabInstance: {fileID: 5474925373390403021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5751545076248365861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660247475975867804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed6e6d125ab98c4699a2c0de51c6633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -10,7 +10,7 @@ namespace Core
         {
             get
             {
-                if (!Application.isPlaying) 
+                if (!s_instance) 
                     s_instance = FindObjectOfType<T>();
                 return s_instance;
             }

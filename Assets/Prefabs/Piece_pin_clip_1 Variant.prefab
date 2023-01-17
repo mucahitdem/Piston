@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1993543528}
   - component: {fileID: 1993543530}
   - component: {fileID: 1993543529}
-  - component: {fileID: 449239592769892812}
+  - component: {fileID: 4343665668598408792}
   m_Layer: 0
   m_Name: pin_clip_1
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &449239592769892812
-MeshCollider:
+--- !u!65 &4343665668598408792
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,10 +94,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4313931890668777801, guid: 6e1c4899bbd98a14aa4e444345aff188, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.0018235384, y: 0.001, z: 0.0017781226}
+  m_Center: {x: 0.0000000029685907, y: 0, z: 0}
 --- !u!1001 &4472007146737431147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,15 +110,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.83800006
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.393
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.526
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405328, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_LocalRotation.w
@@ -151,14 +150,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: m_Name
-      value: Piece_pin_clip_1 Variant
+      value: Piece_pin_clip_1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
       propertyPath: pieceSo
       value: 
       objectReference: {fileID: 11400000, guid: 4c7089e5bfde6d647ac48467d0558dac, type: 2}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: baseAnimation
+      value: 
+      objectReference: {fileID: 8375721065888906452}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584702841980512097, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+      propertyPath: conditions.Array.data[0].isFull
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+--- !u!1 &8997275904864160314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4815328810756405329, guid: 7d4bf77296008944e9bf483453331226, type: 3}
+  m_PrefabInstance: {fileID: 4472007146737431147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8375721065888906452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997275904864160314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeab8bc1fe1f71441a24ebe3fb2777ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8997275904868499727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4815328810752062308, guid: 7d4bf77296008944e9bf483453331226, type: 3}
