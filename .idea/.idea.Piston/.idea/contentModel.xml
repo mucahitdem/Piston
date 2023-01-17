@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Sefir i Mevt\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Sefir i Mevt\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Piston.621738447.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Sefir i Mevt\Documents\GitHub\piston\piston" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModuleEPOOutline.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Core" t="Include">
+            <e p="Control" t="Include">
+              <e p="BaseControl.cs" t="Include" />
+              <e p="ControlTypes" t="Include">
+                <e p="ControlSendRayToMousePosition.cs" t="Include" />
+              </e>
+              <e p="IControl.cs" t="Include" />
+            </e>
+            <e p="InputManagement" t="Include">
+              <e p="Input.cs" t="Include" />
+              <e p="InputHandler.cs" t="Include" />
+            </e>
+            <e p="MinMax.cs" t="Include" />
+            <e p="SingletonMono.cs" t="Include" />
+          </e>
+          <e p="PistonSimulation" t="Include">
+            <e p="Animations" t="Include">
+              <e p="BaseAnimation.cs" t="Include" />
+              <e p="PistonAnim.cs" t="Include" />
+            </e>
+            <e p="ConditionManagement" t="Include">
+              <e p="Condition.cs" t="Include" />
+            </e>
+            <e p="ControlPlayer.cs" t="Include" />
+            <e p="Defs.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="PistonManagement" t="Include">
+              <e p="BasePistonPiece.cs" t="Include" />
+              <e p="PistonPieceData.cs" t="Include" />
+              <e p="PistonPieceSo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Piston.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

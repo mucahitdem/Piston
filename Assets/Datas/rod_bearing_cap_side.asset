@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3172f8ce60424646b88b0081f2dae873, type: 3}
+  m_Name: rod_bearing_cap_side
+  m_EditorClassIdentifier: 
+  pistonPieceData:
+    layer:
+      serializedVersion: 2
+      m_Bits: 16384
+    conditions:
+    - piece: {fileID: 11400000, guid: 772599c7e8214dc48a439715e470954b, type: 2}
+      isMounted: 1
+    isMounted: 0
