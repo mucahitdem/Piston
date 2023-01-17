@@ -9,27 +9,30 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/WristPin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/PinClip.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/ec/5c172ce0/WaitUntil.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/PlaceToReplace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ConditionManagement/Condition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBearingRodSide.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/PistonPieceSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/PistonPieceData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodCap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Control/ControlTypes/ControlSendRayToMousePosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/ReplaceManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/SingletonMono.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InputManagement/Input.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBolt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBearingCapSide.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/PinClip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6B52566-F59B-49FC-861A-7812A1EA2F6B/ec/5c172ce0/WaitUntil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodCap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/WinText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/PistonAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/BasePistonPiece.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ControlPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Defs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/InputManagement/Input.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/BaseAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBolt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBearingCapSide.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,10 +83,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/PistonPieceData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ConditionManagement/Condition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/Animations/RodBolt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/ReplaceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/PlaceToReplace.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/PistonManagement/BasePistonPiece.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/PlaceToReplace.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/ReplacingManagement/ReplaceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PistonSimulation/WinText.cs" />
       </list>
     </option>
   </component>
@@ -121,5 +125,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1673876024859" />
+    <state x="621" y="275" width="678" height="530" key="find.popup" timestamp="1673965861167">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="621" y="275" width="678" height="530" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1673965861167" />
   </component>
 </project>

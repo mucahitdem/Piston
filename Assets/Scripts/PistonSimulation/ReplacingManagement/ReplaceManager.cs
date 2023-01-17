@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using PistonSimulation.PistonManagement;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ namespace PistonSimulation.ReplacingManagement
 {
     public class ReplaceManager : MonoBehaviour
     {
+        public Action onReplacedOwRemovedItem;
+        public Action<bool> onAllPiecesReplaced;
+        
         [SerializeField]
         private List<PlaceToReplace> placeToReplaces = new List<PlaceToReplace>();
 
@@ -18,14 +22,18 @@ namespace PistonSimulation.ReplacingManagement
         {
             GameManager.Instance.onPieceGrabbed += OnItemSelected;
             GameManager.Instance.onPieceReleased += OnItemReleased;
+            onReplacedOwRemovedItem += CheckIfGameEnded;
         }
 
         private void OnDisable()
         {
-            if(!GameManager.Instance)
-                return;
-            GameManager.Instance.onPieceGrabbed -= OnItemSelected;
-            GameManager.Instance.onPieceReleased -= OnItemReleased;
+            if (!GameManager.Instance)
+            {
+                GameManager.Instance.onPieceGrabbed -= OnItemSelected;
+                GameManager.Instance.onPieceReleased -= OnItemReleased;
+            }
+
+            onReplacedOwRemovedItem -= CheckIfGameEnded;
         }
 
         private void OnItemSelected(BasePistonPiece pistonPiece)
@@ -54,6 +62,20 @@ namespace PistonSimulation.ReplacingManagement
             else if(pistonPiece.placeToReplace)
                 pistonPiece.placeToReplace.OnProperItemReleased();
             _tempPlace = null;
+        }
+
+        private void CheckIfGameEnded()
+        {
+            foreach (var place in placeToReplaces)
+            {
+                if (!place.IsFull)
+                {
+                    onAllPiecesReplaced?.Invoke(false);
+                    return;
+                }
+            }  
+            
+            onAllPiecesReplaced?.Invoke(true);
         }
     }
 }

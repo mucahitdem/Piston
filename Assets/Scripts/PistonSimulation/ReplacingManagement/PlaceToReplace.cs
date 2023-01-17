@@ -23,8 +23,14 @@ namespace PistonSimulation.ReplacingManagement
                 if (value != _isFull)
                 {
                     _isFull = value;
-                    if(_isFull)
+                    
+                    _replaceManager.onReplacedOwRemovedItem?.Invoke();
+                    
+                    if (_isFull)
+                    {
                         ColliderActivateController(false);
+                    }
+                       
                     MeshActivateController(!_isFull);
                 }
             }

@@ -67,6 +67,7 @@
               <e p="PlaceToReplace.cs" t="Include" />
               <e p="ReplaceManager.cs" t="Include" />
             </e>
+            <e p="WinText.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -1,6 +1,7 @@
 ﻿using System;
 using Core;
 using PistonSimulation.PistonManagement;
+using PistonSimulation.ReplacingManagement;
 using UnityEngine;
 
 namespace PistonSimulation
@@ -19,6 +20,12 @@ namespace PistonSimulation
         
         [SerializeField]
         private Camera cam;
+
+
+        public ReplaceManager ReplaceManager => replaceManager;
+
+        [SerializeField]
+        private ReplaceManager replaceManager;
 
         protected override void OnAwake()
         {
